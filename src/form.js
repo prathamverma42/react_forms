@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import Result from './result';
 
 class Formmade extends Component{
     constructor(props){
@@ -34,7 +35,8 @@ class Formmade extends Component{
                 <label>First Name: </label><input type="text" id="fname" value={this.state.fname} onChange={this.onChangeValue} placeholder="Enter firstd name"/><br/>
                 <label>Last Name: </label><input type="text" id="lname" value={this.state.lname} onChange={this.onChangeValue} placeholder="Enter Last name"/><br/>
                 <label>Password:</label><input type="text" id="password" value={this.state.password} onChange={this.onChangeValue} placeholder="Enter password"/><br/>
-                <button type="submit" onClick={this.onSubmit}>Submit</button>
+                <button type="submit" onClick={this.onSubmit}>Submit</button><br/><br/>
+                <Result name={this.state.fname} Class={this.state.lname} roll={this.state.password}/>
             </div>
         );
     }

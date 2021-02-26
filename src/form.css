@@ -1,0 +1,12 @@
+h1 {
+    margin: auto;
+    color: red;
+}
+.formdiv{
+    margin: auto;
+    width: 500px;
+    border-radius: 2px solid rgb(255, 0, 0);
+    height: 500px;
+    margin-top: 12%;
+    line-height: 2em;
+}

@@ -1,12 +1,14 @@
-import React from 'react';
+import React,{Component} from 'react';
 import FormMade from './form';
 
-const App2 = () => {
+class App extends Component {
+  render(){
         return (
             <div>
                 <FormMade/>
             </div>
         );    
+      }
 }
 
-export default App2;
+export default App;
